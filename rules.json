@@ -1,0 +1,17 @@
+[{
+      "id": 1,
+      "priority": 1,
+      "action": {
+            "type": "redirect",
+            "redirect": {
+                  "regexSubstitution": "https://\\1.sharepoint.com/\\2&action=view\\3"
+            }
+      },
+      "condition": {
+            "regexFilter": "https://(.*)\\.sharepoint.com/(.*)&action=edit(.*)",
+            "resourceTypes": [
+                  "main_frame"
+            ]
+      }
+}]
+

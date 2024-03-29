@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "MSDOC View It",
+    "version": "0.1",
+    "description": "Set SharePoint/Office356 Online File default mode as viewing to avoid unintended editing",
+    "icons": { "48": "icon48.png", "128": "icon128.png" },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+        "https://*.sharepoint.com/*"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    }
+}
+
