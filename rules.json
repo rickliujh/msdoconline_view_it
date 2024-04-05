@@ -4,13 +4,14 @@
       "action": {
             "type": "redirect",
             "redirect": {
-                  "regexSubstitution": "https://\\1.sharepoint.com/\\2&action=view\\3"
+                  "regexSubstitution": "https://\\1.sharepoint\\2.com/\\3&action=view\\5"
             }
       },
       "condition": {
-            "regexFilter": "https://(.*)\\.sharepoint.com/(.*)&action=edit(.*)",
+            "regexFilter": "https://(.*)\\.sharepoint(.*)\\.com/(.*)&action=(edit|default)(.*)",
             "resourceTypes": [
-                  "main_frame"
+                  "main_frame",
+                  "sub_frame"
             ]
       }
 }]
